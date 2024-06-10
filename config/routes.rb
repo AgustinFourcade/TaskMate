@@ -8,3 +8,13 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 end
+
+Rails.application.routes.draw do
+  root "users#index"
+
+  get "/users", to: "users#index"
+  get "/user/:id", to: "users#show"
+  post "/user", to: "users#create"
+  delete "/user/:id", to: "users#destroy"
+
+end
