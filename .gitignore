@@ -1,5 +1,6 @@
 /temp
 /log
 /tmp
+/test
 .env
 .DS_Store
