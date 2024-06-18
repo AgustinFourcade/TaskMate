@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 end
 
 Rails.application.routes.draw do
-  root "users#index"
+  root "puntero#index", as: "index"
 
   get "/users", to: "users#index"
   get "/user/:id", to: "users#show"

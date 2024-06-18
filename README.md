@@ -1,3 +1,6 @@
+# Install gemes
+budle install
+
 # Run local server
 rails s
 
@@ -12,3 +15,6 @@ rails db:migrate
 
 # Create controller
 rails generate controller ControllerName --skip-routes --no-helper --no-assets --no-template-engine
+
+# Run webpacker server
+./bin/webpack-dev-server
