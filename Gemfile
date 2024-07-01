@@ -72,3 +72,5 @@ end
 # React-rails 
 gem 'react-rails'
 gem "webpacker"
+
+gem 'rack-cors'
