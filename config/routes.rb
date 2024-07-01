@@ -17,4 +17,9 @@ Rails.application.routes.draw do
   post "/user", to: "users#create"
   delete "/user/:id", to: "users#destroy"
 
+  get "/tasks", to: "tasks#index"
+  get "/task/:id", to: "tasks#show"
+  post "/task", to: "tasks#create"
+  delete "/task/:id", to: "tasks#destroy"
+
 end
