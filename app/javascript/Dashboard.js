@@ -1,7 +1,8 @@
 import React from "react";
-import AppBar from "./AppBar"; 
+import AppBar from "./AppBar";
 import FloatingActionButtons from "./FloatingActionButtons";
-import KanbanBoard from "./Board";
+import KanbanBoard from "./components/Board";
+import './index.css';
 
 class MaterialComponentList extends React.Component {
   render() {
@@ -9,7 +10,9 @@ class MaterialComponentList extends React.Component {
       <React.Fragment>
         <AppBar />
         <FloatingActionButtons />
-        <KanbanBoard />
+        <div className="kanban-board">
+          <KanbanBoard />
+        </div>
       </React.Fragment>
     );
   }
